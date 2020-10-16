@@ -5,10 +5,21 @@ platform :ios, '10.0'
 
 target 'challenge11' do
 
+  pod 'RNCMaskedView', :path => '../node_modules/@react-native-community/masked-view'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
+  pod 'RNScreens', :path => '../node_modules/react-native-screens'
+
   target 'challenge11Tests' do
     inherit! :complete
     # Pods for testing
   end
+  use_react_native!
 
   # Enables Flipper.
   #
